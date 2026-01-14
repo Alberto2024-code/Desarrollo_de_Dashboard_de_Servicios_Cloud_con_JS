@@ -34,17 +34,11 @@ const cargarServicios=()=>
         
         if (servicios.estado == "Activo") {
 
-            contenedor.innerHTML += 
-                "<div class='card'>" +
-                    "<h2 class='activo'>" + servicios.estado + "</h2>" +
-                "</div>"
+            contenedor.innerHTML += "<div class='card'>" +"<h2 class='activo'>" + servicios.estado + "</h2>" +"</div>"
 
         } else {
 
-            contenedor.innerHTML += 
-                "<div class='card'>" +
-                    "<h2 class='inactivo'>" + servicios.estado + "</h2>" +
-                "</div>"
+            contenedor.innerHTML += "<div class='card'>" + "<h2 class='inactivo'>" + servicios.estado + "</h2>" + "</div>"
 
         }
     })
